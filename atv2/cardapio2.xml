@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE cardapio SYSTEM 'definicoes.dtd'>
+<cardapio>
+    <prato id="P01">
+        <nome>Bisteca no molho</nome>
+        <descricao>prato saboroso</descricao>
+        <ingredientes>
+            <ingrediente>
+                bisteca
+            </ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">12R$</preco>
+        <calorias>418 kcal</calorias>
+        <tempoPreparo>40min</tempoPreparo>
+    </prato>
+
+    <prato id="P02">
+        <nome>Strogonoff de carne</nome>
+        <descricao>prato Diferenciado de bom</descricao>
+        <ingredientes>
+            <ingrediente>
+                carne
+            </ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">24,98R$</preco>
+        <calorias>98kcal</calorias>
+        <tempoPreparo>30min</tempoPreparo>
+    </prato>
+
+    <prato id="P03">
+        <nome>Dogão</nome>
+        <descricao>prato perfeito</descricao>
+        <ingredientes>
+            <ingrediente>
+                salsicha
+            </ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">10R$</preco>
+        <calorias>200 kcal</calorias>
+        <tempoPreparo>30min</tempoPreparo>
+    </prato>
+
+    <prato id="P04">
+        <nome>Feijoada</nome>
+        <descricao>prato Maravilhoso</descricao>
+        <ingredientes>
+            <ingrediente>
+                feijão
+            </ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">10R$</preco>
+        <calorias>212 kcal</calorias>
+        <tempoPreparo>2h 20min</tempoPreparo>
+    </prato>
+
+    <prato id="P05">
+        <nome>Pastel</nome>
+        <descricao>prato saboroso</descricao>
+        <ingredientes>
+            <ingrediente>
+                massa
+            </ingrediente>
+        </ingredientes>
+        <preco moeda="BRL">12R$</preco>
+        <calorias>120 kcal</calorias>
+        <tempoPreparo>15min</tempoPreparo>
+    </prato>
+</cardapio>
