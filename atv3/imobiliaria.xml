@@ -1,1 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE imobiliaria SYSTEM  'definicoes.dtd'>
+<imobiliaria>
+    <imovel>
+        <propietario>
+            <nome>Ellison</nome>
+            <email>elisonmanoel@gmail.com</email>
+            <telefone>84991193514 - 849922131243</telefone>
+        </propietario>
+        <descricao>mansão de luxo</descricao>
+        <endereco>
+            <rua>rua luxosinha</rua>
+            <bairro>centro</bairro>
+            <cidade>las vegas</cidade>
+            <numero>10063</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>Gigante</tamanho>
+            <numQuartos>12</numQuartos>
+            <numBanheiros>12</numBanheiros>
+        </caracteristicas>
+        <valor>521USD</valor>
+    </imovel>
+    
+    <imovel>
+        <propietario>
+            <nome>Jowl</nome>
+            <email>jowlzinho@gmail.com</email>
+            <telefone>84992149138 - 84923131343</telefone>
+        </propietario>
+        <descricao>Hotel luxo</descricao>
+        <endereco>
+            <rua>rua xunbrega</rua>
+            <bairro>centro</bairro>
+            <cidade>canada</cidade>
+            <numero>10021</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>Gigante</tamanho>
+            <numQuartos>10</numQuartos>
+            <numBanheiros>10</numBanheiros>
+        </caracteristicas>
+        <valor>321</valor>
+    </imovel>
+    <imovel>
+        <propietario>
+            <nome>Renan</nome>
+            <email>gordinho@gmail.com</email>
+            <telefone>84921304245 - 849113145676</telefone>
+        </propietario>
+        <descricao>favela de luxo</descricao>
+        <endereco>
+            <rua>rua careca</rua>
+            <bairro>escondido</bairro>
+            <cidade>RJ</cidade>
+            <numero>5464</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>mediano</tamanho>
+            <numQuartos>5</numQuartos>
+            <numBanheiros>3</numBanheiros>
+        </caracteristicas>
+        <valor>450</valor>
+    </imovel>
+    <imovel>
+        <propietario>
+            <nome>Formiga</nome>
+            <email>formiguinha@gmail.com</email>
+            <telefone>849912413 - 849213154135</telefone>
+        </propietario>
+        <descricao>casa M</descricao>
+        <endereco>
+            <rua>rua nobera</rua>
+            <bairro>centro</bairro>
+            <cidade>Brasil</cidade>
+            <numero>68031</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>Grande</tamanho>
+            <numQuartos>4</numQuartos>
+            <numBanheiros>2</numBanheiros>
+        </caracteristicas>
+        <valor>250</valor>
+    </imovel>
+    <imovel>
+        <propietario>
+            <nome>Dalbert</nome>
+            <email>DG@gmail.com</email>
+            <telefone>849462537 - 8491345143</telefone>
+        </propietario>
+        <descricao>Motel do Neymar</descricao>
+        <endereco>
+            <rua>rua mundial</rua>
+            <bairro>centro</bairro>
+            <cidade>BR</cidade>
+            <numero>54320</numero>
+        </endereco>
+        <caracteristicas>
+            <tamanho>Gigante</tamanho>
+            <numQuartos>46</numQuartos>
+            <numBanheiros>46</numBanheiros>
+        </caracteristicas>
+        <valor>480</valor>
+    </imovel>
+</imobiliaria>
