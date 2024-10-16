@@ -1,0 +1,124 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Pokémon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .accordion-button {
+            background-color: #dc3545;
+            color: white;
+        }
+        .accordion-button:focus {
+            box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .5);
+        }
+        .accordion-body {
+            background-color: #ffffff;
+        }
+        .pokemon-image {
+            max-width: 100px;
+            margin-bottom: 15px;
+        }
+        .pokemon-card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .btn-primary {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+        .btn-primary:hover {
+            background-color: #c82333;
+            border-color: #bd2131;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Lista de Pokémon</h1>
+        
+        <div class="d-grid gap-2 col-6 mx-auto mb-4">
+            <button id="load-pokemon-btn" class="btn btn-primary btn-lg">Carregar Pokémon</button>
+        </div>
+        
+        <div class="accordion mt-4" id="pokemon-accordion"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        async function loadPokemon() {
+            try {
+                const url = 'https://pokeapi.co/api/v2/pokemon?limit=10';
+                const response = await fetch(url);
+                const { results: pokemons } = await response.json();
+                const pokemonAccordion = document.getElementById('pokemon-accordion');
+                pokemonAccordion.innerHTML = '';
+
+                for (const [index, pokemon] of pokemons.entries()) {
+                    const accordionItem = document.createElement('div');
+                    accordionItem.className = 'accordion-item';
+                    accordionItem.innerHTML = `
+                        <h2 class="accordion-header" id="heading-${index}">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${index}" aria-expanded="false" aria-controls="collapse-${index}">
+                                ${pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)}
+                            </button>
+                        </h2>
+                        <div id="collapse-${index}" class="accordion-collapse collapse" aria-labelledby="heading-${index}" data-bs-parent="#pokemon-accordion">
+                            <div class="accordion-body pokemon-card" id="pokemon-details-${index}">
+                                <div class="text-center">Carregando detalhes...</div>
+                            </div>
+                        </div>
+                    `;
+                    pokemonAccordion.appendChild(accordionItem);
+
+                    accordionItem.querySelector('.accordion-button').addEventListener('click', () => {
+                        const detailsElement = document.getElementById(`pokemon-details-${index}`);
+                        if (!detailsElement.classList.contains('loaded')) {
+                            loadPokemonDetails(pokemon.url, index);
+                        }
+                    });
+                }
+            } catch (error) {
+                console.error('Erro ao buscar os Pokémon:', error);
+                alert('Não foi possível carregar os Pokémon.');
+            }
+        }
+
+        async function loadPokemonDetails(url, index) {
+            try {
+                const response = await fetch(url);
+                const pokemon = await response.json();
+
+                // Busca o nome em português
+                const speciesResponse = await fetch(pokemon.species.url);
+                const species = await speciesResponse.json();
+                const nameInPortuguese = species.names.find(name => name.language.name === 'pt')?.name || pokemon.name;
+
+                const detailsElement = document.getElementById(`pokemon-details-${index}`);
+                detailsElement.innerHTML = `
+                    <div class="pokemon-card">
+                        <img src="${pokemon.sprites.front_default}" alt="${nameInPortuguese}" class="pokemon-image" />
+                        <h5>${nameInPortuguese.charAt(0).toUpperCase() + nameInPortuguese.slice(1)}</h5>
+                        <p><strong>ID:</strong> ${pokemon.id}</p>
+                        <p><strong>Altura:</strong> ${pokemon.height / 10} m</p>
+                        <p><strong>Peso:</strong> ${pokemon.weight / 10} kg</p>
+                        <p><strong>Habilidades:</strong> ${pokemon.abilities.map(ability => ability.ability.name).join(', ')}</p>
+                    </div>
+                `;
+                detailsElement.classList.add('loaded');
+            } catch (error) {
+                console.error('Erro ao carregar os detalhes do Pokémon:', error);
+                alert('Não foi possível carregar os detalhes do Pokémon.');
+            }
+        }
+
+        document.getElementById('load-pokemon-btn').addEventListener('click', loadPokemon);
+    </script>
+</body>
+</html>
