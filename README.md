@@ -26,3 +26,116 @@ Esse é o repositório base para as tarefas da disciplina de POS.
 - Commit/Push 
 
 **Prazo**: 19/07/2024
+
+---
+## Tarefa 03 - XML Schema
+- Crie um diretório `xsd` na raiz do repositório
+- Dentro do repositório faça as tarefas dos slides 33, 34 e 35 da aula 08 [link](https://dvcirilo.github.io/pos-ifrn/build/aula08.html#33)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 02/08/2024**
+
+---
+## Tarefa 04 - JSON
+- Crie um diretório `json` na raiz do repositório
+- Dentro do repositório faça as tarefas do slide 06 da aula 09 [link](https://dvcirilo.github.io/pos-ifrn/build/aula09.html#6)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 02/08/2024**
+
+---
+## Tarefa 05 - Parsers 01
+- Crie um diretório `parsers` na raiz do repositório
+- Dentro do repositório faça as tarefas dos slides 08 e 13 da aula 10 [link](https://dvcirilo.github.io/pos-ifrn/build/aula10.html#8)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 09/08/2024**
+
+---
+## Tarefa 06 - Parsers 02
+- Crie um diretório `parsers` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 14 da aula 10 [link](https://dvcirilo.github.io/pos-ifrn/build/aula10.html#14)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 14/08/2024**
+
+---
+## Tarefa 07 - Cliente JSONPlaceholder
+- Crie um diretório `clients` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 22 da aula 11 [link](https://dvcirilo.github.io/pos-ifrn/build/aula11.html#22)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 21/08/2024**
+
+---
+## Tarefa 08 - API Wrapper JSONPlaceholder
+- Crie um diretório `clients` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 24 da aula 11 [link](https://dvcirilo.github.io/pos-ifrn/build/aula11.html#24)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 21/08/2024**
+
+---
+## Tarefa 09 - Cliente SOAP
+- Crie um diretório `clients` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 9 da aula 12 [link](https://dvcirilo.github.io/pos-ifrn/build/aula12.html#9)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 23/08/2024**
+
+---
+## Tarefa 10 - Cliente SOAP com Zeep
+- Crie um diretório `clients` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 12 da aula 12 [link](https://dvcirilo.github.io/pos-ifrn/build/aula12.html#12)
+- Utilize os nomes de arquivos sugeridos na tarefa.
+- Commit/Push
+
+**Prazo: 23/08/2024**
+
+---
+## Tarefa 11 - Cliente SUAP com API Keys
+- Crie um diretório `clients` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 8 da aula 13 [link](https://dvcirilo.github.io/pos-ifrn/build/aula13.html#8)
+- Commit/Push
+
+**Prazo: 13/09/2024**
+
+---
+## Tarefa 12 - Cliente JS
+- Crie um diretório `js` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 29 da aula 14 [link](https://dvcirilo.github.io/pos-ifrn/build/aula14.html#29)
+- Commit/Push
+
+**Prazo: 18/10/2024**
+
+---
+## Tarefa 13 - Cliente JS Vanilla com Vite.js
+- Crie um diretório `cliente-vite` na raiz do repositório
+- Dentro do repositório faça a tarefa do slide 35 da aula 14 [link](https://dvcirilo.github.io/pos-ifrn/build/aula14.html#35)
+- Commit/Push
+
+**Prazo: 28/10/2024**
+
+---
+## Tarefa 14 - Cliente JS React com Vite.js
+- Crie um diretório `cliente-react` na raiz do repositório
+- Dentro do repositório converta o código da tarefa 13 em uma estrutura React, usando componentes.
+- Commit/Push
+
+**Prazo: 01/12/2024**
+
+---
+## Tarefa 15 - Serviço DRF e Cliente JS
+- Crie um diretório `drf` na raiz do repositório para o serviço [link](https://dvcirilo.github.io/pos-ifrn/build/aula16.html#8)
+- Crie um diretório `cliente-spotifake` na raiz do repositório para o cliente [link](https://dvcirilo.github.io/pos-ifrn/build/aula16.html#8)
+- O cliente/serviço devem funcionar em conjunto.
+- Commit/Push
+
+**Prazo: 20/12/2024**
